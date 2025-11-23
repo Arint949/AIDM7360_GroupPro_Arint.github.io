@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Detail - 7360FILM</title>
+    <link rel="stylesheet" href="../detail.css">
+</head>
+<body>
+    <!-- 顶部导航（与原页面一致，未修改） -->
+    <header>
+        <a href="../../home/home.html" class="logo">AIDM7360</a>
+        <div class="right-nav">
+            <div class="search-container">
+                <img src="../../home/搜索.svg" alt="搜索图标">
+                <input type="text" id="search-input" placeholder="Choose a theme">
+                <ul id="search-dropdown" class="dropdown">
+                    <li><a href="../../query/query1/query1.html">Movie</a></li>
+                    <li><a href="../../query/query2/query2.html">Actor</a></li>
+                    <li><a href="../../query/query3/query3.html">Director</a></li>
+                    <li><a href="../../query/query4/query4.html">Genres</a></li>
+                    <li><a href="../../query/query5/query5.html">Release Date</a></li>
+                    <li><a href="../../query/query6/query6.html">Languages</a></li>
+                    <li><a href="../../query/query7/query7.html">Budget</a></li>
+                    <li><a href="../../query/query8/query8.html">Product Company</a></li>
+                </ul>
+            </div>
+            <div class="icon-container">
+                <img src="../../home/信息.svg" alt="消息">
+            </div>
+            <div class="avatar"><img src="../../home/头像.jpg" alt="头像"></div>
+            <div class="setting-container">
+                <img src="../../home/设置.svg" alt="设置">
+                <ul id="setting-dropdown" class="dropdown">
+                    <li>Contact us</li>
+                    <li>Developer Mode</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容（替换为演员详情字段，保留原样式结构） -->
+    <main>
+        <div class="content-wrapper">
+            <!-- 1. 演员基本信息（电影数量） -->
+            <h2 id="actor-intro">Loading...</h2>
+
+            <!-- 2. 电影列表标题 -->
+            <h3 id="movie-list-title">The list of movies is as follows:</h3>
+
+            <!-- 3. 电影列表（动态生成） -->
+            <ul id="movie-list">
+                <li>Loading movies...</li>
+            </ul>
+
+            <!-- 4. 最高评分电影 -->
+            <p id="highest-rated">Highest-rated movie: <span>--</span></p>
+
+            <!-- 5. 平均评分 -->
+            <p id="average-rating">Average rating of all movies: <span>--</span></p>
+        </div>
+    </main>
+
+    <script src="actor_detail.js"></script>
+</body>
+</html>

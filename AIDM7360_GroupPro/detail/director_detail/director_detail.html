@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director Detail - 7360FILM</title>
+    <link rel="stylesheet" href="../query.css">
+    <style>
+        .content-wrapper p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <a href="../../home/home.html" class="logo">AIDM7360</a>
+        <div class="right-nav">
+            <div class="search-container">
+                <img src="../../home/搜索.svg" alt="搜索图标">
+                <input type="text" id="search-input" placeholder="Choose a theme">
+                <ul id="search-dropdown" class="dropdown">
+                    <li><a href="../../query/query1/query1.html">Movie</a></li>
+                    <li><a href="../../query/query2/query2.html">Actor</a></li>
+                    <li><a href="../../query/query3/query3.html">Director</a></li>
+                    <li><a href="../../query/query4/query4.html">Genres</a></li>
+                    <li><a href="../../query/query5/query5.html">Release Date</a></li>
+                    <li><a href="../../query/query6/query6.html">Languages</a></li>
+                    <li><a href="../../query/query7/query7.html">Budget</a></li>
+                    <li><a href="../../query/query8/query8.html">Product Company</a></li>
+                </ul>
+            </div>
+            <div class="icon-container">
+                <img src="../../home/信息.svg" alt="消息">
+            </div>
+            <div class="avatar"><img src="../../home/头像.jpg" alt="头像"></div>
+            <div class="setting-container">
+                <img src="../../home/设置.svg" alt="设置">
+                <ul id="setting-dropdown" class="dropdown">
+                    <li>Contact us</li>
+                    <li>Developer Mode</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <main>
+        <div class="content-wrapper">
+            <h2 id="director-intro">Loading...</h2>
+            <p id="best-movie">Best-rated movie: <span>--</span></p>
+            <p id="worst-movie">Lowest-rated movie: <span>--</span></p>
+            <p id="avg-rating">Average rating: <span>--</span></p>
+            <p id="total-gross">Total worldwide gross across all movies: <span>--</span></p>
+        </div>
+    </main>
+
+    <script src="director_detail.js"></script>
+</body>
+</html>

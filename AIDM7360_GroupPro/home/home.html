@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - 7360FILM</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部导航 -->
+        <header>
+            <div class="logo">AIDM7360</div>
+            <nav>
+                <!-- 搜索区域 -->
+                <div class="search-container" id="searchContainer">
+                    <img src="搜索.svg" alt="搜索图标" class="search-icon">
+                    <input type="text" id="search-input" placeholder="Choose a theme">
+                    <ul id="search-dropdown" class="dropdown">
+                        <li><a href="../query/query1/query1.html">Movie</a></li>
+                        <li><a href="../query/query2/query2.html">Actor</a></li>
+                        <li><a href="../query/query3/query3.html">Director</a></li>
+                        <li>Genres</li>
+                        <li>Release Date</li>
+                        <li>Languages</li>
+                        <li>Budget</li>
+                        <li>Product Company</li>
+                    </ul>
+                </div>
+                
+                <!-- 右侧功能区 -->
+                <div class="action-icons">
+                    <!-- 消息图标 -->
+                    <div class="icon-container">
+                        <img src="信息.svg" alt="消息">
+                    </div>
+                    <!-- 头像 -->
+                    <div class="avatar">
+                        <img src="头像.jpg" alt="头像">
+                    </div>
+                    <!-- 设置区域 -->
+                    <div class="setting-container" id="settingContainer">
+                        <img src="设置.svg" alt="设置" class="setting-icon">
+                        <ul id="setting-dropdown" class="dropdown">
+                            <li>Contact us</li>
+                            <li>Developer Mode</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 主体内容（背景+电影信息） -->
+        <main>
+            <div class="movie-info">
+                <h1>Titanic</h1>
+                <p>1997 - 12 - 19</p>
+                <p>A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

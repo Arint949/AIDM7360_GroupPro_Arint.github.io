@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail - 7360FILM</title>
+    <link rel="stylesheet" href="movie_detail.css">
+</head>
+<body>
+    <!-- 顶部导航（与query1一致） -->
+    <header>
+        <a href="../../home/home.html" class="logo">AIDM7360</a>
+        <div class="right-nav">
+            <div class="search-container">
+                <img src="../../home/搜索.svg" alt="搜索图标">
+                <input type="text" id="search-input" placeholder="Choose a theme">
+                <ul id="search-dropdown" class="dropdown">
+                    <li><a href="../../query/query1/query1.html">Movie</a></li>
+                    <li><a href="../../query/query2/query2.html">Actor</a></li>
+                    <li><a href="../../query/query3/query3.html">Director</a></li>
+                    <li><a href="../../query/query4/query4.html">Genres</a></li>
+                    <li><a href="../../query/query5/query5.html">Release Date</a></li>
+                    <li><a href="../../query/query6/query6.html">Languages</a></li>
+                    <li><a href="../../query/query7/query7.html">Budget</a></li>
+                    <li><a href="../../query/query8/query8.html">Product Company</a></li>
+                </ul>
+            </div>
+            <div class="icon-container">
+                <img src="../../home/信息.svg" alt="消息">
+            </div>
+            <div class="avatar"><img src="../../home/头像.jpg" alt="头像"></div>
+            <div class="setting-container">
+                <img src="../../home/设置.svg" alt="设置">
+                <ul id="setting-dropdown" class="dropdown">
+                    <li>Contact us</li>
+                    <li>Developer Mode</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容（背景+电影详情） -->
+    <main>
+        <div class="content-wrapper">
+            <!-- 电影名（从URL参数获取） -->
+            <h2 id="movie-name">Loading...</h2>
+            <!-- 逗号 -->
+            <div class="comma">，</div>
+            <!-- 电影详情容器（仅保留必要字段） -->
+            <div class="movie-details">
+                <p>which was released on <span id="release-date">--</span>.</p>
+                <p>This movie lasts <span id="duration">--</span> minutes.</p>
+                <p>It is a <span id="genres">--</span> movie.</p>
+                <p>It tells a story: <span id="description">--</span></p>
+                <p>The movie has a score of <span id="rating">--</span>.</p>
+                <p>Produced in <span id="country-origin">--</span>, produced by <span id="production-company">--</span>.</p>
+
+                <!-- 票房信息（对应 budget 和 total_gross_worldwide） -->
+                <p class="box-office-title">Box office information:</p>
+                <p>Opening weekend: <span id="opening-weekend">--</span></p>
+                <p>Total Gross Worldwide: <span id="worldwide">--</span></p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="movie_detail.js"></script>
+</body>
+</html>

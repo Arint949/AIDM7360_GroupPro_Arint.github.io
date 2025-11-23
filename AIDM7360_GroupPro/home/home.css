@@ -1,0 +1,235 @@
+/* --- 基础与响应式设置 --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    font-size: 0.520833vw; 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* --- 背景与遮罩 --- */
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../home海报.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* --- 头部导航 --- */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 18.385vw;
+    top: 1.3vw;
+    width: 3.645vw;
+    height: 2.083vw;
+    font-size: 1.25vw;
+    font-weight: bold;
+    color: #FCB70A;
+    line-height: 1.05vw;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    src: url('安景臣毛笔行书.TTF');
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 7.708vw;
+    gap: 2.8125vw;
+}
+
+/* --- 搜索栏 --- */
+.search-container {
+    position: relative;
+    width: 10.833vw;
+    height: 2.083vw;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.625vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.245vw;
+    height: 1.245vw;
+    filter: brightness(0);
+    z-index: 4;
+}
+
+#search-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5vw 0 2.5vw;
+    border-radius: 2.083vw;
+    border: 0.052vw solid #000;
+    outline: none;
+    background-color: rgba(249, 244, 220, 0.8);
+    font-size: 0.729vw;
+    position: relative;
+    z-index: 3;
+}
+
+/* --- 右侧图标组 --- */
+.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.icon-container, .avatar, .setting-container {
+    width: 2vw;
+    height: 2vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-container {
+    background-color: rgba(249, 244, 220, 0.8);
+    border: 0.052vw solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container img {
+    width: 1.145vw;
+    height: 1.145vw;
+    filter: brightness(0);
+}
+
+.avatar img, .setting-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.setting-icon {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(67%) saturate(413%) hue-rotate(357deg) brightness(104%) contrast(101%);
+}
+
+/* --- 下拉菜单 --- */
+.dropdown {
+    position: absolute;
+    top: 120%;
+    width: 10.833vw;
+    background-color: rgba(249, 244, 220, 0.8);
+    border: 0.052vw solid #000;
+    border-radius: 0.416vw;
+    list-style: none;
+    padding: 0.5vw 0;
+    display: none; /* 默认隐藏 */
+    z-index: 100;
+    font-size: 0.729vw;
+    font-weight: bold;
+}
+
+#search-dropdown {
+    left: 0;
+    height: 15.885vw;
+    display: none; /* 确保默认隐藏 */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#setting-dropdown {
+    right: 0;
+    height: 5.052vw;
+    display: none; /* 确保默认隐藏 */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dropdown li {
+    text-align: center;
+    padding: 0.5vw 0;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- 电影信息 --- */
+.movie-info {
+    position: absolute;
+    left: 18.125vw;
+    top: 21.0vw;
+    color: #fff;
+    z-index: 5;
+}
+
+.movie-info h1 {
+    left: 18.125vw;
+    font-size: 5.0vw;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 2vw;
+}
+
+.movie-info p {
+    left: 18.125vw;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    
+    /* 核心修改：限定最大宽度 */
+    max-width: 655px; 
+    
+    /* 以下为可选属性，用于优化换行行为 */
+    /* 确保长单词或URL能够被截断并换行 */
+    word-wrap: break-word; 
+    /* 允许在单词内换行，用于处理非常长的连续字符 */
+    word-break: break-all; 
+}
