@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query1 - 7360FILM</title>
+    <link rel="stylesheet" href="../query.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <!-- Logo 改为 a 标签，添加跳转链接 -->
+        <a href="../../home/home.html" class="logo">AIDM7360</a>
+        <div class="right-nav">
+            <!-- 搜索区域 -->
+            <div class="search-container">
+                <img src="../../home/搜索.svg" alt="搜索图标">
+                <input type="text" id="search-input" placeholder="Choose a theme">
+                <ul id="search-dropdown" class="dropdown">
+                    <li><a href="../query1/query1.html">Movie</a></li>
+                    <li><a href="../query2/query2.html">Actor</a></li>
+                    <li><a href="../query3/query3.html">Director</a></li>
+                    <li><a href="../query4/query4.html">Genres</a></li>
+                    <li><a href="../query5/query5.html">Release Date</a></li>
+                    <li><a href="query6.html">Languages</a></li>
+                    <li><a href="../query7/query7.html">Budget</a></li>
+                    <li><a href="../query8/query8.html">Product Company</a></li>
+                </ul>
+            </div>
+            <!-- 消息图标 -->
+            <div class="icon-container">
+                <img src="../../home/信息.svg" alt="消息">
+            </div>
+            <!-- 头像 -->
+            <div class="avatar"><img src="../../home/头像.jpg" alt="头像"></div>
+            <!-- 设置区域 -->
+            <div class="setting-container">
+                <img src="../../home/设置.svg" alt="设置">
+                <ul id="setting-dropdown" class="dropdown">
+                    <li>Contact us</li>
+                    <li>Developer Mode</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 主体内容：文字 + 输入框（垂直水平居中） -->
+    <main>
+        <div class="content-wrapper">
+            <h2>Please enter the name of the actor</h2>
+            <input type="text" id="movie-input" class="movie-input" placeholder="Enter actor name">
+        </div>
+    </main>
+    <script src="query2.js"></script>
+</body>
+</html>
